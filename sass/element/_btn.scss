@@ -1,8 +1,8 @@
 // 按鈕設定
 $btn-font-color:$btn-word;
 $btn-border:darken($btn-font-color, 5);
-$btn-padding:.5em 1.25em;
-$btn-radius:.2em;
+$btn-padding:16px 52px;
+$btn-radius: 6px;
 // 按鈕外框
 .btn_grp {
     text-align: center;
@@ -100,7 +100,7 @@ $btn-radius:.2em;
 }
 .btn-submit {
     // @extend %btn;
-    @include btn_setting(lighten($primaryColor, 5), #FFF);
+    @include btn_setting(darken($primaryColor, 5), #FFF);
 }
 .btn-reset {
     // @extend %btn;

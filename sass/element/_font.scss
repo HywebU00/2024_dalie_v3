@@ -8,7 +8,7 @@
     color: $COLOR;
     text-decoration: $NOLINE;
     &:hover,
-    &:focus {
+    &:focus-visible {
         color: $aHover;
         cursor: pointer;
     }

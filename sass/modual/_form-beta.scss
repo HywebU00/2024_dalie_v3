@@ -4,8 +4,10 @@ $m-gutter: 4px; // Flex grid system default margin
     color: $f_color;
     font-size: 1em;
     border: 1px solid $f_border;
-    padding: .5em;
-    background: #fff;
+    // padding: .5em;
+    padding: 12px 24px;
+    color: #fff;
+    background: transparent;
     vertical-align: middle;
     margin: .3em;
     box-sizing: border-box;
@@ -235,7 +237,7 @@ select::-ms-expand {
     // 表單的線 ----------------------- start
     // border-top: 1px solid #DDD;
     .form_grp {
-        border-bottom: 1px dashed #DDD;
+        // border-bottom: 1px dashed #DDD;
         padding: .5em 0;
         // &:last-child{
         //     border-bottom: transparent;  // 最後一筆不要下虛線
@@ -394,7 +396,8 @@ select::-ms-expand {
         // 第一層的 form_title
         .form_title {
             // padding: 18px 0;
-            color: darken($primaryColor, 10);
+            // color: darken($primaryColor, 10);
+            color: #fff;
             font-weight: 500;
         }
     }
@@ -404,8 +407,10 @@ select::-ms-expand {
         align-self: flex-start;
         // padding: .65em 1em;
         padding: .65em 0;
+        font-size: 1.25em;
         font-weight: 500;
-        color: darken($primaryColor, 10);
+        // color: darken($primaryColor, 10);
+        color: #fff;
         //white-space: nowrap;
         @include screen('mobile') {
             max-width: calc(100% - .6em);
@@ -1251,7 +1256,7 @@ select::-ms-expand {
 .form-column {
     .form_title {
         padding-bottom: 0 !important;
-        margin: 0 .3em;
+        margin: 0 .3em .5em;
     }
     .form_title,
     .form_content {
@@ -1393,9 +1398,9 @@ select:focus {
 //---------------------------------------------下拉選單--------//
 select {
     line-height: 1.4em;
-    padding: .5em 24px .5em .5em;
+    padding: 12px 32px 12px 24px;
     border: 1px solid $color-gray;
-    background: #fff url(../images/icon/icon_select_arrow.png) no-repeat right center;
+    background: #333 url(../images/icon/icon_select_arrow.png) no-repeat right 8px center;
     background-size: 16px;
     option {
         outline: none;

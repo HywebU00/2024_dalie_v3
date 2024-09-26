@@ -2,32 +2,32 @@
 @import '_variable'; //變數
 // 共通 common
 @import 'common/_mixin'; //客製MIXIN
-@import 'common/_grid'; //格線 - bootstrap
-@import 'common/_grid-flex'; //格線 - flex
+// @import 'common/_grid'; //格線 - bootstrap
+// @import 'common/_grid-flex'; //格線 - flex
 @import 'common/_normalize'; //reset
 @import 'common/_typography'; //CP文字排版
 @import 'common/_accessibility'; //無障礙關閉js設定
 @import 'common/_hack'; //瀏覽器修正
 // 元件 element
 @import 'element/_font'; //文字設定
-@import 'element/_language'; //語言選單
+// @import 'element/_language'; //語言選單
 @import 'element/_btn'; //按鈕設定
 @import 'element/_breadcrumb'; //麵包屑
 @import 'element/_divider'; //分隔線
 @import 'element/_image'; //圖片
 @import 'element/_icon'; //圖示
-@import 'element/_tooltip'; //tooltip
-@import 'element/_category'; //資料大類
-@import 'element/_tag'; //文章標籤
+// @import 'element/_tooltip'; //tooltip
+// @import 'element/_category'; //資料大類
+// @import 'element/_tag'; //文章標籤
 @import "element/_element"; //小元素
 // 模組 modual
 @import 'modual/_header'; //header
 @import 'modual/_menu';
-@import 'modual/_menuSidebar'; //menu
-@import 'modual/_megamenu'; //megamenu
-@import 'modual/_fixed_sidebar'; //固定側邊欄
+// @import 'modual/_menuSidebar'; //menu
+// @import 'modual/_megamenu'; //megamenu
+// @import 'modual/_fixed_sidebar'; //固定側邊欄
 @import 'modual/_footer'; //footer
-@import 'modual/_fatfooter'; //fatfooter
+// @import 'modual/_fatfooter'; //fatfooter
 // @import "modual/_form";					//表單-麥莉
 @import 'modual/_form-beta'; //表單（純flex）
 @import 'modual/_table'; //表格
@@ -35,20 +35,22 @@
 @import 'modual/_link'; //連結樣式
 @import 'modual/_tabs'; //頁籤
 @import 'modual/_thumbnail'; //縮圖
-@import 'modual/_modal'; //pop視窗
-@import 'modual/_slick'; //slick
+// @import 'modual/_modal'; //pop視窗
+// @import 'modual/_slick'; //slick
 @import 'modual/_function_panel'; //內頁功能面板
-@import 'modual/_marquee'; //跑馬燈
+// @import 'modual/_marquee'; //跑馬燈
 @import 'modual/_paginations'; //分頁
 @import 'modual/_notice'; //提示
-@import 'modual/_accordion.scss'; //收合式選單
-@import "../vendor/fancyBox/fancybox.css"; //燈箱
-@import "../vendor/slick/slick.css"; //燈箱
-@import "../vendor/slick/slick-theme.css"; //燈箱
+// @import 'modual/_accordion.scss'; //收合式選單
+// @import "../vendor/fancyBox/fancybox.css"; //燈箱
+// @import "../vendor/slick/slick.css"; //燈箱
+// @import "../vendor/slick/slick-theme.css"; //燈箱
+
 // 頁面
 @import 'page/_template'; //版型初始設定
 @import 'page/_mp'; //首頁
 @import 'page/_cp'; //CP
-@import 'page/_sitemap'; //Sitemap
-@import 'page/_left_block'; //左欄left_block
+// @import 'page/_sitemap'; //Sitemap
+// @import 'page/_left_block'; //左欄left_block
+// @import 'page/_main';       //樣式
 @import 'common/_print'; //列印樣式
