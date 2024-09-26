@@ -5264,6 +5264,9 @@ div.function ul li.icon_forward a:before {
   display: inline-block;
   vertical-align: middle;
 }
+.pagination .total label {
+  display: inline-block;
+}
 .pagination .total select {
   margin: 0px 0.5em;
 }

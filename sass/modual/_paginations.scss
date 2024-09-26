@@ -123,6 +123,9 @@
         padding: 0em;
         display: inline-block;
         vertical-align: middle;
+        label {
+            display: inline-block; 
+        }
         select {
             margin: 0px .5em;
             @include screen('mobile') {
