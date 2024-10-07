@@ -1055,6 +1055,7 @@ kbd kbd {
 .readonly, [readonly] {
   cursor: not-allowed !important;
   text-shadow: none;
+  border-color: transparent;
 }
 
 .btn-xl {
