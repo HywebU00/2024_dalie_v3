@@ -6391,7 +6391,7 @@ body.noscroll {
 }
 @media (max-width: 768px) {
   .mainTitle h2 {
-    font-size: 19px;
+    font-size: 1.25em;
   }
   .mainTitle p {
     text-align: left;
