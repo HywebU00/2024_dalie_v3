@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>個人專區 / 註冊</title>
+    <title>個人專區 / 結果</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -53,22 +53,62 @@
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <div class="container">
           <section class="infoZone">
-            <form action="">
-              <div class="flex-form">
-                <div class="flex-form form-column">
-                  <div class="form_grp">
-                    <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
-                    <div class="form_content">
-                      <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678" value="0930123456">
+            <div class="article">
+              <h2>您的手機號碼：</h2>
+              <ul>
+                <li>0930123456 <a href="">重設</a></li>
+              </ul>
+            </div>
+            <div class="article">
+              <h2>通報紀錄：</h2>
+              <ul>
+                <li>累計通報疑似詐騙訊息總數：<span>23</span></li>
+                <li>累計已確認詐騙訊息件數：<span>21</span></li>
+                <li>低重要性與現有資訊無法判斷件數：<span>2</span></li>
+                <li>確認比率：<span>91.3%</span></li>
+                <li>確認比率：<span class="yellow">49%</span></li>
+                <li class="note yellow">*由於數發部打詐中心人力有限，如果您的通報正確率較低，我們將調降優先處理順序，尚請見諒。</li>
+                <li>確認比率：<span class="red">10%</span></li>
+                <li class="note red">*由於數發部打詐中心人力有限，如果您的通報正確率較低，我們將調降優先處理順序，尚請見諒。</li>
+              </ul>
+            </div>
+            <div class="article">
+              <h2>意見與回饋：</h2>
+              <ul>
+                <li><a href="#" class="fb">對系統有任何建議嗎?</a></li>
+              </ul>
+            </div>
+            <div class="article">
+              <h2>您最近的通報：</h2>
+              <!-- 資訊圖卡 -->
+              <div class="col card _demo">
+                <a href="result.html">
+                  <div class="col_39">
+                    <div class="col foto">
+                      <img src="images/demo/d_1.jpg" alt="">
+                    </div>
+                    <div class="col info">
+                      <div class="flexible">
+                        <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                      </div>
+                      <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+                      <div class="flexible visible">
+                        <div class="dataDefine">
+                          <img src="images/s_Facebook.png" alt="">
+                          <!-- <img src="images/s_Instagram.png" alt="">
+                          <img src="images/s_Line.png" alt="">
+                          <img src="images/s_Tiktok.png" alt="">
+                          <img src="images/s_Web.png" alt="">
+                          <img src="images/s_Youtube.png" alt=""> -->
+                          <div class="frequency">987</div>
+                        </div>
+                        <span class="red">詐騙訊息。已通知臉書移除</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="btn_grp form_inline">
-                    <input name="" type="reset" value="清除" class="btn btn-reset" />
-                    <input name="" type="submit" value="註冊" class="btn btn-submit"/>
-                  </div>
-                </div>
+                </a>
               </div>
-            </form>
+            </div>
           </section>
         </div>
       </div>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>個人專區 / 註冊</title>
+    <title>可疑網址通報</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -52,19 +52,47 @@
         <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <div class="container">
+          <!-- search -->
+          <div class="search" role="search">
+            <div class="form_grp">
+              <label for="mustSameAsId">搜尋欄位</label>
+              <input name="username" id="mustSameAsId" type="text" placeholder="請輸入可疑網址或可疑訊息" accesskey="S" title="" aria-label="搜尋網站內容" />
+              <input name="" type="submit" value="開始搜尋" class="btn btn-search" />
+            </div>
+          </div>
+          <!-- 標題＋tip -->
+          <section class="mainTitle">
+            <h2>感謝您協助通報詐騙資訊！</h2>
+            <p>您的通報是打擊詐騙的重要力量，<br>幫助我們及時掌握詐騙手法，並將其納入警示資訊，守護民眾的財產安全。<br>讓我們共同努力，防範詐騙，共建安全網絡！</p>
+          </section>
+          <!--  -->
           <section class="infoZone">
             <form action="">
               <div class="flex-form">
                 <div class="flex-form form-column">
                   <div class="form_grp">
-                    <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
+                    <label for="fake-legend" class="form_title" aria-required="true">疑似詐騙網址：</label>
                     <div class="form_content">
-                      <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678" value="0930123456">
+                      <input name="" id="" type="" placeholder="" value="https://money.jin-shuo.com.tw/?gad_sourc" readonly>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
+                    <div class="form_content _flexInline">
+                      <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678">
+                      <button class="btn normal">發送OTP驗證碼</button>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="fake-legend" class="form_title" aria-required="true">手機驗證碼：</label>
+                    <div class="form_content _flexInline">
+                      <!-- <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678"> -->
+                      <span>ADI-</span><input type="text" id="fake-legend" placeholder="請輸入文字">
                     </div>
                   </div>
                   <div class="btn_grp form_inline">
                     <input name="" type="reset" value="清除" class="btn btn-reset" />
-                    <input name="" type="submit" value="註冊" class="btn btn-submit"/>
+                    <input name="" type="submit" value="送出通報" class="btn btn-submit"/>
                   </div>
                 </div>
               </div>

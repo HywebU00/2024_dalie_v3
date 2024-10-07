@@ -760,8 +760,7 @@ kbd kbd {
   white-space: nowrap;
   line-height: normal;
   width: auto;
-  padding: 16px 52px;
-  min-width: 4em;
+  padding: 13px 40px;
   margin: 0.25em 0.1em;
 }
 .upload_grp .upload_btn i, .btn i {
@@ -4141,9 +4140,9 @@ select:focus {
 
 select {
   line-height: 1.4em;
-  padding: 12px 32px 12px 24px;
+  padding: 12px 40px 12px 24px;
   border: 1px solid #ccc;
-  background: #333 url(../images/icon/icon_select_arrow.png) no-repeat right 8px center;
+  background: #333 url(../images/icon/icon_select_arrow.png) no-repeat right 12px center;
   background-size: 16px;
 }
 select option {
@@ -5831,14 +5830,9 @@ body.noscroll {
   }
 }
 .card._narrow {
-  padding: 1.5em 3em;
+  padding: 2.75em 3em;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
-}
-@media (max-width: 768px) {
-  .card._narrow {
-    padding: 1.5em 2em;
-  }
 }
 .card._mixed h4 {
   margin: 0;
@@ -5943,14 +5937,22 @@ body.noscroll {
     margin-bottom: 10px;
   }
   .card._narrow {
-    padding: 20px;
+    padding: 2.5em 2em;
     margin-top: 0;
     margin-bottom: 8px;
   }
 }
 
+.embead {
+  margin-left: 18px;
+  text-align: center;
+}
+
 .pieChart .legend {
   margin-bottom: 1em;
+}
+.pieChart .legend p {
+  margin: 10px 0;
 }
 .pieChart .legend p span {
   display: flex;
@@ -6012,6 +6014,8 @@ body.noscroll {
 .infoZone {
   max-width: 800px;
   margin: 8px auto 0;
+  max-width: 800px;
+  margin: 52px auto 0;
 }
 .infoZone .article ol, .infoZone .article ul {
   margin: 12px 20px;
@@ -6026,6 +6030,21 @@ body.noscroll {
 .infoZone .article li a {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .infoZone {
+    margin-top: 0;
+  }
+}
+.infoZone .form_content._inline {
+  display: flex;
+}
+.infoZone .form_content._inline input {
+  height: 50px;
+  width: auto;
+  max-width: calc(16.6666666667% - 0.6em);
+  text-align: center;
+  font-size: 1.25em;
+}
 
 .loading {
   display: flex;
@@ -6035,6 +6054,17 @@ body.noscroll {
 .loading svg {
   margin: 40px;
   display: inline-block;
+}
+
+.form_content._flexInline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.filter {
+  width: 60%;
+  margin: 3em auto;
 }
 
 .spinner {
@@ -6247,9 +6277,11 @@ body.noscroll {
 .user {
   padding-top: 2em;
 }
+.user h2.phoneNum,
 .user h3.phoneNum {
   font-size: 2.25em;
   color: #39a0ff;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -6271,7 +6303,7 @@ body.noscroll {
 .article {
   letter-spacing: 1px;
 }
-.article h3 {
+.article h2 {
   margin: 0 0 0.5em;
   font-size: 1.25em;
 }
@@ -6325,7 +6357,7 @@ body.noscroll {
 }
 .article p, .article li {
   color: #aaa;
-  line-height: 1.45;
+  line-height: 1.6;
 }
 .article p a, .article li a {
   text-decoration: underline;
@@ -6340,13 +6372,30 @@ body.noscroll {
   }
 }
 
-.limited {
-  max-width: 800px;
-  margin: 52px auto 0;
+.mainTitle {
+  text-align: center;
+  margin: 2em 0;
+}
+.mainTitle h2 {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+.mainTitle p {
+  margin: 1em 0;
+  letter-spacing: 1px;
+}
+.mainTitle + .col.card._demo {
+  max-width: 460px;
+  margin: auto;
 }
 @media (max-width: 768px) {
-  .limited {
-    margin-top: 0;
+  .mainTitle h2 {
+    font-size: 19px;
+  }
+  .mainTitle p {
+    text-align: left;
+    font-size: 13.6px;
   }
 }
 

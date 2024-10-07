@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>個人專區 / 註冊</title>
+    <title>可疑網址通報</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -52,24 +52,56 @@
         <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <div class="container">
-          <section class="infoZone">
-            <form action="">
-              <div class="flex-form">
-                <div class="flex-form form-column">
-                  <div class="form_grp">
-                    <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
-                    <div class="form_content">
-                      <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678" value="0930123456">
-                    </div>
+          <!-- search -->
+          <div class="search" role="search">
+            <div class="form_grp">
+              <label for="mustSameAsId">搜尋欄位</label>
+              <input name="username" id="mustSameAsId" type="text" placeholder="請輸入可疑網址或可疑訊息" accesskey="S" title="" aria-label="搜尋網站內容" />
+              <input name="" type="submit" value="開始搜尋" class="btn btn-search" />
+            </div>
+          </div>
+          <!-- 標題＋tip -->
+          <section class="mainTitle">
+            <h2>感謝您協助通報詐騙資訊！</h2>
+            <p>您的通報是打擊詐騙的重要力量，<br>幫助我們及時掌握詐騙手法，並將其納入警示資訊，守護民眾的財產安全。<br>讓我們共同努力，防範詐騙，共建安全網絡！</p>
+          </section>
+          <!-- 資訊圖卡 -->
+          <div class="col card _demo">
+            <a href="result.html">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/demo/d_1.jpg" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
                   </div>
-                  <div class="btn_grp form_inline">
-                    <input name="" type="reset" value="清除" class="btn btn-reset" />
-                    <input name="" type="submit" value="註冊" class="btn btn-submit"/>
+                  <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987</div>
+                    </div>
+                    <span class="red">詐騙訊息。已通知臉書移除</span>
                   </div>
                 </div>
               </div>
-            </form>
+            </a>
+          </div>
+          <!-- 標題＋tip -->
+          <section class="mainTitle">
+            <p>本系統會先判定各通報訊息的風險等級，並優先處理高風險案件。中低風險訊息的處理時間可能比較長，請您耐心等候。</p>
+            <p class="split"><span>*</span><span>本網站僅提供網路詐騙通報查詢功能。如需報案，請至<a href="#">警政署165全民防詐網</a>。</span></p>
           </section>
+          <div class="btn_grp">
+            <!-- <a href="cards.html" class="btn btn-submit">回首頁</a> -->
+            <input name="" type="submit" value="回首頁" class="btn btn-submit">
+          </div>
         </div>
       </div>
       <!-- footer -->
@@ -111,6 +143,8 @@
     <script src="vendor/jquery.easing.min.js"></script>
     <!-- lazyload -->
     <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- hyUI -->
+    <!-- <script src="js/main.js"></script> -->
     <!-- 客製js -->
     <script src="js/customize.js"></script>
   </body>

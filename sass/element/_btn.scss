@@ -1,7 +1,7 @@
 // 按鈕設定
 $btn-font-color:$btn-word;
 $btn-border:darken($btn-font-color, 5);
-$btn-padding:16px 52px;
+$btn-padding:13px 40px;
 $btn-radius: 6px;
 // 按鈕外框
 .btn_grp {
@@ -52,7 +52,7 @@ $btn-radius: 6px;
     line-height: normal;
     width: auto;
     padding: $btn-padding;
-    min-width: 4em;
+    // min-width: 4em;
     margin:.25em .1em;
     
     i {

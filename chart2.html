@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>統計 - chart</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#aC" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header Start -->
+      <header class="header">
+        <div class="container">
+          <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+          <section>
+            <h1>
+              <a href="index.html">網路詐騙通報查詢網</a>
+            </h1>
+            <!-- menu Start -->
+            <nav class="menu" role="navigation" aria-label="Header的導航列">
+              <a href="cards.html"><span class="icon _hot"></span>熱門</a>
+              <a href="cards-2.html"><span class="icon _new"></span>最新</a>
+              <a href="chart2.html" class="act"><span class="icon _chart"></span>統計</a>
+              <a href="form1.html"><span class="icon _member"></span>個人</a>
+            </nav>
+          </section>
+          <!-- noscript -->
+          <noscript>
+            您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+            <a href="#">網站導覽</a>
+          </noscript>
+        </div>
+      </header>
+      <!-- header End -->
+      <!-- main Start -->
+      <div id="aC" class="main">
+        <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
+        <div class="container">
+          <!-- filter -->
+          <div class="filter">
+            <div class="flex-form">
+              <!-- select -->
+              <div class="form_grp">
+                <label for="fake-legend" class="form_title" aria-required="true">通報處理概況：</label>
+                <div class="form_content">
+                  <select name="" id="fake-legend">
+                    <option value="">狀況一</option>
+                      <option value="">狀況二</option>
+                      <option value="">...</option>
+                  </select>
+                </div>
+              </div>
+              <!-- select -->
+              <div class="form_grp">
+                <label for="fake-legend" class="form_title" aria-required="true">週期時間：</label>
+                <div class="form_content">
+                  <select name="" id="fake-legend">
+                    <option value="">過去7天</option>
+                    <option value="">過去14天</option>
+                    <option value="">過去30天</option>
+                  </select>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="btn_grp form_inline">
+                <button class="btn btn-reset">清除</button>
+                <button class="btn btn-submit">查詢</button>
+              </div>
+            </div>
+          </div>
+          <!-- grid -->
+          <section>
+            <div class="card _narrow">
+              <h4>概況</h4>
+              <section class="infoSplit">
+                <p>通報疑似詐騙訊息總數：<span>56,385則</span></p>
+                <p>確認是詐騙訊息：<span>30,384則</span></p>
+                <p>確認非詐騙訊息：<span>5,001則</span></p>
+                <p>無法判斷或重要性低：<span>4,999則</span></p>
+              </section>
+            </div>
+          </section>
+          <section class="col_2">
+            <div class="col card _narrow">
+              <h4>過去<b>7</b>天詐騙樣態比例</h4>
+              <section>
+                <div class="pieChart">
+                  <div class="legend">
+                    <section class="infoSplit">
+                      <p><span><em style="background:#F765A3 ;"></em>偽冒公眾人物：</span><span>39,486則</span></p>
+                      <p><span><em style="background:#F4EA5A ;"></em>偽冒政府機構：</span><span>12,088則</span></p>
+                      <p><span><em style="background:#A155B9 ;"></em>私訊詐騙：</span><span>7,657則</span></p>
+                      <p><span><em style="background:#6495ED ;"></em>一頁式詐騙廣告：</span><span>912則</span></p>
+                      <p><span><em style="background:#ECB3CD ;"></em>其他詐騙：</span><span>976則</span></p>
+                  </div>
+                  <!-- chart靜態圖檔/pdf -->
+                  <div class="embead">
+                    <img src="images/embead1.png" alt="過去7天詐騙樣態比例的圖像化呈現">
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col card _narrow">
+              <h4>詐騙媒介</h4>
+              <h5>同一廣告於不同平台顯示，亦列入計算</h5>
+              <section>
+                <div class="pieChart">
+                  <div class="legend">
+                    <section class="infoSplit">
+                      <p><span><em style="background:#3077f2 ;"></em>Facebook：</span><span>39,486則</span></p>
+                      <p><span><em style="background:#39c655 ;"></em>Messenger：</span><span>12,088則</span></p>
+                      <p><span><em style="background:#f50804 ;"></em>Google：</span><span>7,657則</span></p>
+                      <p><span><em style="background:#ea8129 ;"></em>Instagram：</span><span>912則</span></p>
+                      <p><span><em style="background:#f1d172 ;"></em>Audience Network：</span><span>976則</span></p>
+                  </div>
+                  <!-- chart靜態圖檔/pdf -->
+                  <div class="embead">
+                    <img src="images/embead2.png" alt="詐騙媒介資訊的圖像化呈現">
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+          <div class="footer_logo">
+            <img src="images/logo.png" alt="數位發展部" class="img-responsive" />
+            <p>
+              地址：100057 臺北市中正區延平南路143號<br />
+              服務電話：0800-770-707&nbsp;&nbsp;傳真電話：02-2380-0791<br />
+              民意信箱：www-mailbox.moda.gov.tw
+            </p>
+            <p class="Copyright">No copyright reserved.</p>
+          </div>
+          <div class="footer_info">
+            <ul class="footer_link">
+              <li><a href="javascript:;">隱私權及網站安全政策</a></li>
+              <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+            </ul>
+            <span class="update">更新日期：<em>2018/01/01</em></span>
+            <span class="counter">累計瀏覽人次：<em>46476653</em></span>
+            <div class="footer_icon">
+              <a target="_blank" href="javascript:;">
+                <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+              </a>
+              <!-- <a target="_blank" href="javascript:;">
+                <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- hyUI -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>
