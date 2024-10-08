@@ -6066,6 +6066,11 @@ body.noscroll {
   flex-wrap: nowrap;
   align-items: center;
 }
+.form_content > p {
+  opacity: 0.6;
+  word-break: break-all;
+  margin: 6px 0.4em;
+}
 
 .filter {
   width: 60%;

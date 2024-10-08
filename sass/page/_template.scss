@@ -839,6 +839,11 @@ $imgWH: 60px;
     flex-wrap: nowrap;
     align-items: center;
   }
+  > p{
+    opacity: 0.6;
+    word-break: break-all;
+    margin: 6px .4em;
+  }
 }
 
 .filter{
