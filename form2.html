@@ -27,6 +27,13 @@
       <header class="header">
         <div class="container">
           <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+          <nav class="navigation" role="navigation" aria-label="Site">
+            <div class="navlist">
+              <ul>
+                <li><a href="#">網站導覽</a></li>
+              </ul>
+            </div>
+          </nav>
           <section>
             <h1>
               <a href="index.html">網路詐騙通報查詢網</a>
@@ -52,14 +59,6 @@
         <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <div class="container">
-          <!-- search -->
-          <div class="search" role="search">
-            <div class="form_grp">
-              <label for="mustSameAsId">搜尋欄位</label>
-              <input name="username" id="mustSameAsId" type="text" placeholder="請輸入可疑網址或可疑訊息" accesskey="S" title="" aria-label="搜尋網站內容" />
-              <input name="" type="submit" value="開始搜尋" class="btn btn-search" />
-            </div>
-          </div>
           <!-- 標題＋tip -->
           <section class="mainTitle">
             <h2>可疑網址通報</h2>
@@ -73,21 +72,29 @@
                   <div class="form_grp">
                     <label for="fake-legend" class="form_title" aria-required="true">疑似詐騙網址：</label>
                     <div class="form_content">
-                      <p>https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4"</p>
+                      <p>https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4"</p>
+                      <!-- <button class="btn _switch">顯示完整網址</button> -->
+                      <input type="button" class="btn btn-normal _switch" value="顯示完整網址">
                     </div>
                   </div>
+                  <!-- <div class="form_grp">
+                    <label for="fake-legend" class="form_title" aria-required="true">疑似詐騙網址：</label>
+                    <div class="form_content">
+                      <p class="show">https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4i_code=8531744&str_category_code=3900100001&mdiv=3999900000-bt_2_097_05-bt_2_097_05_e12&ctype=B&sourcePageType=4"</p>
+                      <input type="button" class="btn btn-primary" value="隱藏完整網址">
+                    </div>
+                  </div> -->
                   <div class="form_grp">
                     <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
                     <div class="form_content _flexInline">
-                      <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678">
+                      <input type="tel" id="fake-legend" placeholder="手機格式 0912345678">
                       <button class="btn normal">發送OTP驗證碼</button>
                     </div>
                   </div>
                   <div class="form_grp">
                     <label for="fake-legend" class="form_title" aria-required="true">手機驗證碼：</label>
                     <div class="form_content _flexInline">
-                      <!-- <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678"> -->
-                      <span>ADI-</span><input type="text" id="fake-legend" placeholder="請輸入文字">
+                      <input type="text" id="fake-legend" placeholder="請輸入文字">
                     </div>
                   </div>
                   <div class="btn_grp form_inline">

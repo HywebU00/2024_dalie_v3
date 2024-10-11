@@ -43,7 +43,8 @@ body {
 .main {
   position: relative;
   margin: 0 auto;
-  padding-top: calc(100px + 1em);
+  // padding-top: calc(100px + 1em);
+  padding-top: 127px;
   // padding-bottom: 4em;
 
   // 可先設定一個中央區塊最大寬，限制accesskey對齊
@@ -51,7 +52,7 @@ body {
     line-height: 1.25em;
   }
   .accesskey{
-    top: 110px;
+    top: 140px;
   }
 
   @media (max-width: $screen-md) {
@@ -843,6 +844,14 @@ $imgWH: 60px;
     opacity: 0.6;
     word-break: break-all;
     margin: 6px .4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &.show{
+      overflow: visible;
+      white-space: normal;
+    }
   }
 }
 
@@ -1257,6 +1266,10 @@ $duration: 1.4s;
     color: #fff;
     font-size: 2rem;
     letter-spacing: 3px;
+  }
+  h3{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
   p {
     margin: 1em 0;

@@ -1,45 +1,62 @@
 $(document).ready(function() {
     // 手機版 search btn switch
-    $('.mobileSearchBtn').click(function() {
-        if ($('.mobileShow').hasClass('act')) {
-            $('.mobileShow').removeClass('act').fadeOut();
-        } else {
-            $('.mobileShow').addClass('act').fadeIn();
-        }
-    });
-    // 寬度異動時，移除.act
-    $(window).resize(function() {
-        if ($(window).width() > 991) {
-            $('.mobileShow').removeClass('act').hide();
-        }
-    });
+    // $('.mobileSearchBtn').click(function() {
+    //     if ($('.mobileShow').hasClass('act')) {
+    //         $('.mobileShow').removeClass('act').fadeOut();
+    //     } else {
+    //         $('.mobileShow').addClass('act').fadeIn();
+    //     }
+    // });
+    // // 寬度異動時，移除.act
+    // $(window).resize(function() {
+    //     if ($(window).width() > 991) {
+    //         $('.mobileShow').removeClass('act').hide();
+    //     }
+    // });
 
-    function checkHeight() {
-        if ($('.mask p').height() < 400) {
-            $('.mask button.btn').hide();
-            $('.mask:after').hide();  // 請注意這裡 :after 需要特別處理
-        } else {
-            $('.mask button.btn').show();
-            $('.mask:after').show();  // 同上
-        }
-    }
-    // 初次檢查
-    checkHeight();
-    // 當窗口大小變化時重新檢查
-    $(window).resize(function() {
-        checkHeight();
-    });
+    // function checkHeight() {
+    //     if ($('.mask p').height() < 400) {
+    //         $('.mask button.btn').hide();
+    //         $('.mask:after').hide();  // 請注意這裡 :after 需要特別處理
+    //     } else {
+    //         $('.mask button.btn').show();
+    //         $('.mask:after').show();  // 同上
+    //     }
+    // }
+    // // 初次檢查
+    // checkHeight();
+    // // 當窗口大小變化時重新檢查
+    // $(window).resize(function() {
+    //     checkHeight();
+    // });
 
     // 內容摘要 閱讀全文 btn
-    $('.mask .btn').click(function() {
-        var $mask = $('.mask');
-        var $btn = $(this);
-        if ($mask.hasClass('_show')) {
-            $mask.removeClass('_show');
-            $btn.text('閱讀全文');
+    // $('.mask .btn').click(function() {
+    //     var $mask = $('.mask');
+    //     var $btn = $(this);
+    //     if ($mask.hasClass('_show')) {
+    //         $mask.removeClass('_show');
+    //         $btn.text('閱讀全文');
+    //     } else {
+    //         $mask.addClass('_show');
+    //         $btn.text('顯示較少內容');
+    //     }
+    // });
+
+    // form2 顯示/隱藏網址
+    $('.form_content').find('._switch').click(function(){
+        // alert('123');
+        // $(this).hide();
+        var $paragraph = $(this).siblings('p');
+        
+        if ($paragraph.hasClass('show')) {
+            $paragraph.removeClass('show');
+            $(this).html('顯示完整網址');
+            $(this).attr('value', '顯示完整網址');
         } else {
-            $mask.addClass('_show');
-            $btn.text('顯示較少內容');
+            $paragraph.addClass('show');
+            $(this).html('隱藏完整網址');
+            $(this).attr('value', '隱藏完整網址');
         }
     });
 

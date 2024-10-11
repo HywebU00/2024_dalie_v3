@@ -7,15 +7,15 @@
   color: #CCC;
 }
 
-.publish_info, .web_link, .pagination, div.function, .thumbnail .btn_grp, .divider, .divider-vertical, .container, .row {
+.sitemap, .publish_info, .web_link, .pagination, div.function, .thumbnail .btn_grp, .divider, .divider-vertical, .container, .row {
   clear: both;
   zoom: 1;
 }
-.publish_info:before, .web_link:before, .pagination:before, div.function:before, .thumbnail .btn_grp:before, .divider:before, .divider-vertical:before, .container:before, .row:before, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .container:after, .row:after {
+.sitemap:before, .publish_info:before, .web_link:before, .pagination:before, div.function:before, .thumbnail .btn_grp:before, .divider:before, .divider-vertical:before, .container:before, .row:before, .sitemap:after, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .container:after, .row:after {
   content: "";
   display: table;
 }
-.publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .container:after, .row:after {
+.sitemap:after, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .container:after, .row:after {
   clear: both;
 }
 
@@ -93,15 +93,15 @@
   padding-right: 15px;
 }
 
-.publish_info, .web_link, .pagination, div.function, .thumbnail .btn_grp, .divider, .divider-vertical, .row, .container {
+.sitemap, .publish_info, .web_link, .pagination, div.function, .thumbnail .btn_grp, .divider, .divider-vertical, .row, .container {
   clear: both;
   zoom: 1;
 }
-.publish_info:before, .web_link:before, .pagination:before, div.function:before, .thumbnail .btn_grp:before, .divider:before, .divider-vertical:before, .row:before, .container:before, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .row:after, .container:after {
+.sitemap:before, .publish_info:before, .web_link:before, .pagination:before, div.function:before, .thumbnail .btn_grp:before, .divider:before, .divider-vertical:before, .row:before, .container:before, .sitemap:after, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .row:after, .container:after {
   content: "";
   display: table;
 }
-.publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .row:after, .container:after {
+.sitemap:after, .publish_info:after, .web_link:after, .pagination:after, div.function:after, .thumbnail .btn_grp:after, .divider:after, .divider-vertical:after, .row:after, .container:after {
   clear: both;
 }
 
@@ -477,9 +477,6 @@ a.goCenter:hover, a.goCenter:focus-visible {
 }
 .no-js .mpSlider .img-container:nth-child(1) {
   display: block;
-}
-.no-js .navigation {
-  padding-right: 170px;
 }
 .no-js .navigation .language {
   width: auto;
@@ -1873,7 +1870,7 @@ header {
 header .container {
   padding: 0 1em;
 }
-header .container section {
+header .container > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1905,7 +1902,7 @@ header .menu a {
   align-items: center;
   font-size: 1.125em;
   color: #fff;
-  height: 100px;
+  height: 90px;
   position: relative;
   min-height: 1px;
   padding-left: 20px;
@@ -1949,6 +1946,25 @@ header .menu a.act {
 }
 header .menu a.act .icon._hot, header .menu a.act .icon._new, header .menu a.act .icon._chart, header .menu a.act .icon._member {
   background-position: left bottom;
+}
+header .navigation {
+  border-bottom: 1px solid #666;
+}
+header .navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+header .navigation ul a {
+  display: block;
+  color: #fff;
+  font-size: 85%;
+  padding: 4px 12px;
+}
+header .navigation ul a:hover, header .navigation ul a:focus-visible {
+  background: #464646;
 }
 @media (max-width: 992px) {
   header {
@@ -5422,13 +5438,13 @@ body.noscroll {
 .main {
   position: relative;
   margin: 0 auto;
-  padding-top: calc(100px + 1em);
+  padding-top: 127px;
 }
 .main h2 {
   line-height: 1.25em;
 }
 .main .accesskey {
-  top: 110px;
+  top: 140px;
 }
 @media (max-width: 992px) {
   .main {
@@ -6070,6 +6086,13 @@ body.noscroll {
   opacity: 0.6;
   word-break: break-all;
   margin: 6px 0.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.form_content > p.show {
+  overflow: visible;
+  white-space: normal;
 }
 
 .filter {
@@ -6390,6 +6413,10 @@ body.noscroll {
   color: #fff;
   font-size: 2rem;
   letter-spacing: 3px;
+}
+.mainTitle h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 .mainTitle p {
   margin: 1em 0;
@@ -6983,6 +7010,88 @@ h2.title {
 @media screen and (max-width: 767px) {
   .publish_info li {
     flex: 1 1 100%;
+  }
+}
+
+/* sitemap */
+.sitemap {
+  color: #fff;
+  margin: 0px auto 1em;
+}
+.sitemap p kbd {
+  border: 1px solid #aaa;
+  padding: 0 0.3em;
+  margin: 0 0.2em 0.1em;
+}
+.sitemap p kbd kbd {
+  border: none;
+}
+.sitemap .accesskeyDefine {
+  padding: 1em 2em;
+  border-radius: 6px;
+}
+.sitemap .accesskeyDefine li {
+  margin-bottom: 0.2em;
+}
+
+.cascading {
+  border-top: 1px solid #ccc;
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+.cascading ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cascading li {
+  line-height: 1.5;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -5px 0 0;
+  box-sizing: border-box;
+  padding: 0px 0.5em;
+}
+.cascading li a {
+  margin: 0.2em 0;
+  color: #fff;
+  padding: 0.5em 1em;
+  display: block;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #666;
+}
+.cascading li a:hover, .cascading li a:focus-visible {
+  text-decoration: none;
+  background: #666;
+}
+.cascading li ul {
+  padding-left: 1em;
+}
+.cascading li ul li {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+}
+.cascading li ul li a {
+  display: block;
+  font-size: 1em;
+  padding: 0.2em 0;
+  border-bottom: 1px dotted #ccc;
+  background-color: transparent;
+  font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .cascading {
+    width: 95%;
+    margin: 0px auto;
+  }
+  .cascading li {
+    width: 100%;
   }
 }
 

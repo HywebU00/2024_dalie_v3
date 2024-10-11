@@ -6,7 +6,7 @@ header {
     background: #333;
     .container {
         padding: 0 1em;
-        section{
+        > section{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -39,7 +39,8 @@ header {
             align-items: center;
             font-size: 1.125em;
             color: #fff;
-            height: 100px;
+            // height: 100px;
+            height: 90px;
             @include gutter(40px);
             transition: 0.3s;
 
@@ -101,6 +102,23 @@ header {
             //   background: $linkColor;
             // }
         }
+        }
+    }
+    .navigation{
+        border-bottom: 1px solid #666;
+        ul{
+            @include li-reset;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                display: block;
+                color: #fff;
+                font-size: 85%;
+                padding: 4px 12px;
+                &:hover, &:focus-visible{
+                    background: #464646;
+                }
+            }
         }
     }
     @media (max-width: $screen-md) {
