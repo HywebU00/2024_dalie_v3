@@ -1022,15 +1022,25 @@ kbd kbd {
 }
 
 .btn-normal {
-  background: #f1f1f1 !important;
-  color: #65656E !important;
-  border: solid 1px #c3c3c3 !important;
+  background: #434343 !important;
+  color: #fff !important;
+  border: solid 1px #fff !important;
   text-shadow: none !important;
 }
 .btn-normal:hover, .btn-normal:focus {
   color: #404046 !important;
   background: #c3c3c3 !important;
   border: solid 1px #c3c3c3 !important;
+}
+
+._switch {
+  color: #fff !important;
+  background: #515151 !important;
+  border-color: transparent !important;
+}
+._switch:hover, ._switch:focus {
+  color: #fff !important;
+  background: #656565 !important;
 }
 
 .btn-back {
