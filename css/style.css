@@ -6462,7 +6462,7 @@ body.noscroll {
   display: none;
 }
 #innerType .main {
-  padding-top: 92px;
+  padding-top: 125px;
 }
 @media (max-width: 992px) {
   #innerType header {
