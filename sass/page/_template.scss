@@ -793,6 +793,15 @@ $imgWH: 60px;
       }
     }
   }
+  .flex-form .check_grp{
+    width: auto;
+    margin: auto;
+    a{
+      display: inline-block;
+      margin: 0 4px;
+    }
+  }
+
   max-width: 800px;
   margin: 52px auto 0;
   @media (max-width: $screen-sm){
@@ -862,7 +871,7 @@ $imgWH: 60px;
 
 //
 $offset: 187;
-$duration: 1.4s;
+$duration: .5s;
 
 .spinner {
   animation: rotator $duration linear infinite;
@@ -1320,7 +1329,7 @@ $duration: 1.4s;
     }
   }
   .main{
-    padding-top: 92px;
+    padding-top: 125px;
     // .container{
     //   padding-top: 100px;
     // }

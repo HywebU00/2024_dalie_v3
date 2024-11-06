@@ -71,6 +71,11 @@ $btn-radius: 6px;
         color: $btn-font-color;
         outline: none;
     }
+
+    img{
+        // 旋轉圈圈預設隱藏
+        display: none;
+    }
 }
 //按鈕顏色
 //@include btn_setting(按鈕顏色,字的顏色);
@@ -115,12 +120,10 @@ $btn-radius: 6px;
     background: $primaryColor!important;
     color: #fff !important;
     border: solid 1px $primaryColor!important;
-
     &:hover,
     &:focus {
         background: darken($primaryColor, 10)!important;
         border: solid 1px $primaryColor!important;
-
     }
 }
 // 次要按鈕
@@ -138,15 +141,38 @@ $btn-radius: 6px;
 }
 // 一般按鈕
 .btn-normal{
-    background: #f1f1f1!important;
-    color: #65656E !important;
-    border: solid 1px #c3c3c3!important;
+    background: #434343!important;
+    color: #fff !important;
+    border: solid 1px #fff!important;
     text-shadow: none!important;
     &:hover,
     &:focus{
         color: darken(#65656E, 15)!important;
         background: #c3c3c3!important;
         border: solid 1px #c3c3c3!important;
+    }
+}
+
+._switch{
+    color: #fff !important;
+    background: #515151 !important;
+    border-color: transparent !important;
+    &:hover,
+    &:focus{
+        color: #fff !important;
+        background: #656565 !important;
+    }
+}
+
+._going{
+    position: relative;
+    img{
+        position: absolute;
+        right: 12px;
+        width: 24px;
+        height: 24px;
+        top: 13px;
+        display: block;
     }
 }
 

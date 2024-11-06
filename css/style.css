@@ -794,6 +794,9 @@ kbd kbd {
   color: #222;
   outline: none;
 }
+.btn img {
+  display: none;
+}
 
 .btn-green {
   background: #298729;
@@ -1041,6 +1044,18 @@ kbd kbd {
 ._switch:hover, ._switch:focus {
   color: #fff !important;
   background: #656565 !important;
+}
+
+._going {
+  position: relative;
+}
+._going img {
+  position: absolute;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  display: block;
 }
 
 .btn-back {
@@ -4061,7 +4076,7 @@ button {
   vertical-align: middle;
   margin: 0.3em;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 2px;
   transition: all 0.3s ease-out;
 }
 
@@ -4140,7 +4155,7 @@ textarea {
   vertical-align: middle;
   margin: 0.3em;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 2px;
   transition: all 0.3s ease-out;
   height: 5em;
   overflow-y: scroll;
@@ -4189,6 +4204,7 @@ input[type=radio] {
   height: 1em;
   background-color: #f7f6ee;
   border: 2px solid #ccc;
+  padding: 10px;
 }
 
 input[type=radio] {
@@ -6057,6 +6073,14 @@ body.noscroll {
 .infoZone .article li a {
   text-decoration: underline;
 }
+.infoZone .flex-form .check_grp {
+  width: auto;
+  margin: auto;
+}
+.infoZone .flex-form .check_grp a {
+  display: inline-block;
+  margin: 0 4px;
+}
 @media (max-width: 768px) {
   .infoZone {
     margin-top: 0;
@@ -6111,7 +6135,7 @@ body.noscroll {
 }
 
 .spinner {
-  animation: rotator 1.4s linear infinite;
+  animation: rotator 0.5s linear infinite;
 }
 
 @keyframes rotator {
@@ -6126,7 +6150,7 @@ body.noscroll {
   stroke-dasharray: 187;
   stroke-dashoffset: 0;
   transform-origin: center;
-  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  animation: dash 0.5s ease-in-out infinite, colors 2s ease-in-out infinite;
 }
 
 @keyframes colors {
