@@ -6123,6 +6123,7 @@ body.noscroll {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 }
 .form_content > p.show {
   overflow: visible;
