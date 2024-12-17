@@ -531,6 +531,13 @@ $imgWH: 60px;
     }
   }
 
+  p.date{
+    text-align: right;
+    time{
+      margin-left: 12px;
+    }
+  }
+
   &._narrow {
     // 窄版
     padding: 2.75em 3em;
@@ -676,6 +683,7 @@ $imgWH: 60px;
     h4{
       // font-size: 19px;
       margin: 0 0 10px;
+      line-height: 1.4;
       + h5{
         margin-top: -10px;
         margin-bottom: 10px;

@@ -5872,6 +5872,12 @@ body.noscroll {
     margin-right: 0;
   }
 }
+.card p.date {
+  text-align: right;
+}
+.card p.date time {
+  margin-left: 12px;
+}
 .card._narrow {
   padding: 2.75em 3em;
   margin-top: 0.75em;
@@ -5974,6 +5980,7 @@ body.noscroll {
   }
   .card h4 {
     margin: 0 0 10px;
+    line-height: 1.4;
   }
   .card h4 + h5 {
     margin-top: -10px;
