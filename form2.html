@@ -78,6 +78,34 @@
                     </div>
                   </div>
                   <div class="form_grp">
+                    <!-- Label 與 Input 的關聯 -->
+                    <label for="user-input" class="form_title">輸入內容：</label>
+                    <!-- Input 欄位 -->
+                    <div class="form_content _flexInline">
+                      <input 
+                        type="text" 
+                        id="user-input" 
+                        name="userInput" 
+                        placeholder="請輸入您的內容" 
+                        aria-required="true" 
+                        aria-describedby="input-description"
+                      >
+                      <!-- Button -->
+                      <button 
+                        type="button" 
+                        class="btn btn-normal" 
+                        aria-label="送出輸入的內容">
+                        提交
+                      </button>
+                    </div>
+
+                    <!-- 說明文字 -->
+                    <p id="input-description" class="sr-only">
+                      此欄位為必填，請輸入有效內容。
+                    </p>
+                  </div>
+
+                  <div class="form_grp">
                     <label for="fake-legend" class="form_title" aria-required="true">您的手機號碼：</label>
                     <div class="form_content _flexInline">
                       <input type="tel" id="fake-legend" placeholder="手機格式 0912345678">
@@ -92,7 +120,7 @@
                   </div>
                   <div class="form_grp">
                     <div class="check_grp">
-                      <label><input type="checkbox">我已閱讀並同意條款<a href="#">隱私權保護政策</a></label>
+                      <label><input type="checkbox">我已閱讀並同意條款<a href="#" target="_blank">隱私權保護政策(另開視窗)</a></label>
                     </div>
                   </div>
                   <div class="btn_grp form_inline">
