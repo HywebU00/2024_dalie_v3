@@ -59,6 +59,13 @@ body {
     padding-top: 192px;
   }
 }
+.search_tip{
+  display: block;
+  width: 100%;
+  padding: 4px 10px;
+  color: #c5c5c5;
+  text-align: right;
+}
 
 // --------------------------------------------------------------- flex grid 設定
 // 不折行
@@ -480,16 +487,19 @@ $imgWH: 60px;
     color: $linkColor;
     font-size: 3em;
   }
-  h4 {
+  h4,
+  .c_title {
     font-size: 1.5em;
     margin: 1em 0;
     b {
       padding: 0 4px;
       color: $linkColor;
     }
-    + h5{
+    + h5,
+    + .tip{
       margin-top: -20px;
       margin-bottom: 1.5em;
+      font-size: 0.83em;
     }
   }
   p.data {
@@ -1190,6 +1200,10 @@ $duration: .5s;
     margin: 0 0 0.5em;
     // font-size: 19px;
     font-size: 1.25em;
+  }
+  .a_title{
+    margin: 1em 0;
+    font-size: 1.17em;
   }
   p {
     margin: 12px 0 12px 20px;

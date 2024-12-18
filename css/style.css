@@ -2034,6 +2034,7 @@ header .navigation ul a:hover, header .navigation ul a:focus-visible {
 .search {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
   max-width: 600px;
   margin: 1em auto;
@@ -2056,7 +2057,7 @@ header .navigation ul a:hover, header .navigation ul a:focus-visible {
   background-size: 36px 36px;
   position: absolute;
   right: 1px;
-  top: 50%;
+  top: 26px;
   transform: translateY(-50%);
   border-radius: 0 3px 3px 0;
   transition: 0.3s;
@@ -5478,6 +5479,14 @@ body.noscroll {
   }
 }
 
+.search_tip {
+  display: block;
+  width: 100%;
+  padding: 4px 10px;
+  color: #c5c5c5;
+  text-align: right;
+}
+
 .flexible {
   display: flex;
   flex-wrap: nowrap;
@@ -5826,17 +5835,23 @@ body.noscroll {
   color: #39a0ff;
   font-size: 3em;
 }
-.card h4 {
+.card h4,
+.card .c_title {
   font-size: 1.5em;
   margin: 1em 0;
 }
-.card h4 b {
+.card h4 b,
+.card .c_title b {
   padding: 0 4px;
   color: #39a0ff;
 }
-.card h4 + h5 {
+.card h4 + h5,
+.card h4 + .tip,
+.card .c_title + h5,
+.card .c_title + .tip {
   margin-top: -20px;
   margin-bottom: 1.5em;
+  font-size: 0.83em;
 }
 .card p.data {
   font-size: 3em;
@@ -6381,6 +6396,10 @@ body.noscroll {
 .article h2 {
   margin: 0 0 0.5em;
   font-size: 1.25em;
+}
+.article .a_title {
+  margin: 1em 0;
+  font-size: 1.17em;
 }
 .article p {
   margin: 12px 0 12px 20px;

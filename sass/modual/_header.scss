@@ -165,6 +165,7 @@ header {
 .search {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
     max-width: 600px;
     margin: 1em auto;
@@ -186,7 +187,7 @@ header {
         background-size: 36px 36px;
         position: absolute;
         right: 1px;
-        top: 50%;
+        top: 26px;
         transform: translateY(-50%);
         border-radius: 0 3px 3px 0;
         transition: 0.3s;
