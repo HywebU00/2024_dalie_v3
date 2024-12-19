@@ -4301,12 +4301,12 @@ input[type=file] {
 }
 
 .warn > .form_title {
-  color: #b70000 !important;
+  color: #ff6a6a !important;
   font-weight: bold;
 }
 .warn .radio_grp.error,
 .warn .check_grp.error {
-  box-shadow: 0px 0px 0px 2px #b70000;
+  box-shadow: 0px 0px 0px 2px #ff6a6a;
   margin-top: 2px;
   padding: 0.25em;
   border-radius: 4px;
@@ -4316,7 +4316,7 @@ input[type=file] {
 }
 
 .error {
-  box-shadow: 0px 0px 0px 2px #b70000;
+  box-shadow: 0px 0px 0px 2px #ff6a6a;
   border: transparent;
 }
 
@@ -4325,7 +4325,7 @@ input[type=file] {
 }
 .form_content .form_grp.error .form_title,
 .form_content .form_grp.error label {
-  color: #b70000;
+  color: #ff6a6a;
   font-weight: bold;
 }
 .form_content .form_grp.error input,
@@ -5408,11 +5408,7 @@ div.function ul li.icon_forward a:before {
 }
 
 *[class*=notice_error] {
-  color: #C40000;
-}
-*[class*=notice_error]:before {
-  background: url(../images/basic/icon_error.svg) no-repeat center center;
-  background-size: 15px;
+  color: #ff6a6a;
 }
 
 .notice {
