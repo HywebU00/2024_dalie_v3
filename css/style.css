@@ -5484,6 +5484,7 @@ body.noscroll {
   width: 100%;
   padding: 4px 10px;
   color: #c5c5c5;
+  text-align: right;
 }
 
 .flexible {
