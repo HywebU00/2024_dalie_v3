@@ -14,9 +14,9 @@
     <!-- hyUI -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <style>
-      body{
+      body {
         background: #333;
         color: #fff;
         counter-reset: num;
@@ -72,7 +72,7 @@
         counter-increment: num;
         display: block;
         text-align: center;
-        content: counters(num, '.') ' ';
+        content: counters(num, ".") " ";
       }
       tbody tr td:nth-child(2) {
         width: 35%;
@@ -90,7 +90,7 @@
   <body>
     <div class="demo_wrap">
       <h1><img src="images/logo.svg" alt="" /></h1>
-      
+
       <div class="table_wrapper">
         <!-- 打詐 -->
         <table>
@@ -156,6 +156,11 @@
               <td></td>
               <td>隱私權</td>
               <td><a href="private.html"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>政府網站資料開放宣告</td>
+              <td><a href="decoration.html"></a></td>
             </tr>
             <tr>
               <td></td>
@@ -280,10 +285,10 @@
     <script src="js/customize.js"></script>
     <script>
       $(function () {
-        $('tbody')
-          .find('a')
+        $("tbody")
+          .find("a")
           .each(function (index, el) {
-            var Link = $(this).attr('href');
+            var Link = $(this).attr("href");
             $(this).text(Link);
           });
       });
