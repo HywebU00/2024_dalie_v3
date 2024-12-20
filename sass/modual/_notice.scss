@@ -69,12 +69,12 @@
     }
 }
 *[class*="notice_error"] {
-    color: #C40000;
+    color: #ff6a6a;
     // background-color: #FFD2D2;
-    &:before {
-        background: url(../images/basic/icon_error.svg) no-repeat center center;
-        background-size: 15px;
-    }
+    // &:before {
+    //     background: url(../images/basic/icon_error.svg) no-repeat center center;
+    //     background-size: 15px;
+    // }
 }
 
 .notice{

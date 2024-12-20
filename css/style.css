@@ -5848,6 +5848,7 @@ body.noscroll {
   margin-top: -20px;
   margin-bottom: 1.5em;
   font-size: 0.83em;
+  display: block;
 }
 .card p.data {
   font-size: 3em;
@@ -6405,24 +6406,22 @@ body.noscroll {
   justify-content: left;
   align-items: flex-start;
 }
-.article ol,
-.article ul {
+.article ol, .article ul {
   list-style: none;
   margin: 12px 0 12px 20px;
   overflow: hidden;
   list-style: none;
   padding: 0;
 }
-.article ol li,
-.article ul li {
+.article ol li, .article ul li {
   margin: 10px 0;
   display: flex;
   position: relative;
   word-break: break-all;
+  padding: 4px;
   margin: 0;
 }
-.article ol li:before,
-.article ul li:before {
+.article ol li:before, .article ul li:before {
   content: "";
   position: absolute;
   width: 6px;
@@ -6432,17 +6431,14 @@ body.noscroll {
   left: -12px;
   top: 8px;
 }
-.article ol li time,
-.article ul li time {
+.article ol li time, .article ul li time {
   margin-right: 18px;
   min-width: 0;
 }
-.article ol li a,
-.article ul li a {
+.article ol li a, .article ul li a {
   color: #fff;
 }
-.article ol li a.fb,
-.article ul li a.fb {
+.article ol li a.fb, .article ul li a.fb {
   color: #2a96f9;
 }
 .article p, .article li {
@@ -6454,6 +6450,12 @@ body.noscroll {
 }
 .article p a:hover, .article p a:focus-visible, .article li a:hover, .article li a:focus-visible {
   text-decoration: none;
+}
+.article._private ol li, .article._private ul li {
+  display: block;
+}
+.article._private ol li b, .article._private ul li b {
+  color: #ddd;
 }
 @media (max-width: 768px) {
   .article ol li time, .article ul li time {

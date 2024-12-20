@@ -500,6 +500,7 @@ $imgWH: 60px;
       margin-top: -20px;
       margin-bottom: 1.5em;
       font-size: 0.83em;
+      display: block;
     }
   }
   p.data {
@@ -1214,8 +1215,7 @@ $duration: .5s;
       align-items: flex-start;
     }
   }
-  ol,
-  ul {
+  ol, ul {
     // margin: 1em 0 1em 1em;
     list-style: none;
     margin: 12px 0 12px 20px;
@@ -1228,6 +1228,7 @@ $duration: .5s;
       display: flex;
       position: relative;
       word-break: break-all;
+      padding: 4px;
       &:before {
         content: "";
         position: absolute;
@@ -1254,17 +1255,27 @@ $duration: .5s;
   }
   // 老實說真的蠻擊敗的
   p, li{
-      // opacity: 0.6;
-      color: #aaa;
-      line-height: 1.6;
-      // font-size: 85%;
-      a{
-        text-decoration: underline;
-        &:hover, &:focus-visible{
-          text-decoration: none;
+    // opacity: 0.6;
+    color: #aaa;
+    line-height: 1.6;
+    // font-size: 85%;
+    a{
+      text-decoration: underline;
+      &:hover, &:focus-visible{
+        text-decoration: none;
+      }
+    }
+  }
+  &._private{
+    ol, ul {
+      li {
+        display: block;
+        b{
+          color: #ddd;
         }
       }
     }
+  }
   // @media (max-width: $screen1200) {
   //   > hr {
   //     display: block;
