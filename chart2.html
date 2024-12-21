@@ -61,7 +61,8 @@
         <div class="container">
           <!-- filter -->
           <div class="filter">
-            <div class="flex-form">
+            <p id="filter-description" class="sr-only">請選擇通報處理概況和週期時間，然後按下查詢按鈕以獲取下方資訊。</p>
+            <div class="flex-form" aria-labelledby="filter-description">
               <!-- select -->
               <div class="form_grp">
                 <label for="fake-legend" class="form_title" aria-required="true">通報處理概況：</label>
@@ -84,7 +85,6 @@
                   </select>
                 </div>
               </div>
-              <div class="search_tip">search 的 tip</div>
               <!-- 按鈕 -->
               <div class="btn_grp form_inline">
                 <button class="btn btn-reset">清除</button>
