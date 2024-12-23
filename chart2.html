@@ -92,6 +92,40 @@
               </div>
             </div>
           </div>
+
+          <b>雅惠版本</b>
+          <div class="filter">
+            <div class="flex-form">
+              <p id="message">選擇資訊按下查詢按鈕後，底下資訊將變更</p>
+              <!-- select -->
+              <div class="form_grp">
+                <label for="legendSelect" class="form_title" aria-required="true">通報處理概況：</label>
+                <div class="form_content">
+                  <select aria-describedby="message" name="legendSelect" id="legendSelect">
+                    <option value="">狀況一</option>
+                      <option value="">狀況二</option>
+                      <option value="">...</option>
+                  </select>
+                </div>
+              </div>
+              <!-- select -->
+              <div class="form_grp" id="typeDiv">
+                <label for="typeSelect" class="form_title" aria-required="true">週期時間：</label>
+                <div class="form_content">
+                  <select aria-describedby="message" name="typeSelect" id="typeSelect">
+                    <option value="">過去7天</option>
+                    <option value="">過去14天</option>
+                    <option value="">過去30天</option>
+                  </select>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="btn_grp form_inline">
+                <button class="btn btn-reset">清除</button>
+                <button class="btn btn-submit">查詢</button>
+              </div>
+            </div>
+          </div>
           <!-- grid -->
           <section>
             <div class="card _narrow">
