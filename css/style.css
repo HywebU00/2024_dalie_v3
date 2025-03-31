@@ -1909,10 +1909,22 @@ header h1 {
   display: flex;
   align-items: center;
   padding-left: 90px;
-  background: url(../images/logo_mobile.svg) left 50% no-repeat;
+  background: url(../images/logo2.svg) left 50% no-repeat;
 }
 header h1 a {
   color: #fff;
+  display: flex;
+  align-items: center;
+}
+header h1 a span {
+  font-size: 72%;
+  color: #222;
+  background: #fad527;
+  letter-spacing: normal;
+  padding: 2px 14px;
+  margin-left: 6px;
+  border-radius: 8px;
+  line-height: 26px;
 }
 header h1 a:hover, header h1 a:focus-visible {
   color: #39a0ff;
@@ -5471,7 +5483,7 @@ body.noscroll {
 }
 @media (max-width: 992px) {
   .main {
-    padding-top: 192px;
+    padding-top: 210px;
   }
 }
 
