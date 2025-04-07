@@ -2089,12 +2089,13 @@ header .navigation ul a:hover, header .navigation ul a:focus-visible {
     position: fixed;
     max-width: none;
     width: 100%;
-    top: 123px;
+    top: 170px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1001;
     margin: 0 auto;
     padding: 6px 1em;
+    background: #333333;
   }
   .search .btn-search {
     right: 16px;
@@ -5483,7 +5484,7 @@ body.noscroll {
 }
 @media (max-width: 992px) {
   .main {
-    padding-top: 210px;
+    padding-top: 270px;
   }
 }
 

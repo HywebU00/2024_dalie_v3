@@ -222,12 +222,13 @@ header {
         position: fixed;
         max-width: none;
         width: 100%;
-        top: 123px;
+        top: 170px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
         margin: 0 auto;
         padding: 6px 1em;
+        background: #333333;
         .btn-search{
             right: 16px;
         }
